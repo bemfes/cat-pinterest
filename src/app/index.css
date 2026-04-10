@@ -31,6 +31,7 @@
 }
 
 body {
+  font-family: Roboto;
   min-width: 303px;
   min-height: 100vh;
   font-size: 14px;
