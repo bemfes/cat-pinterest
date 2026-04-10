@@ -1,5 +1,5 @@
 :root {
-  
+
   --blue: #2196F3;
   --dark-blue: #1E88E5;
 
@@ -19,6 +19,16 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: Roboto;
+  src: 
+   url('../shared/assets/fonts/Roboto-Regular.woff2') format('woff2'),
+   url('../shared/assets/fonts/Roboto-Regular.woff') format('woff'),
+   url('../shared/assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
 
 body {
   min-width: 303px;
