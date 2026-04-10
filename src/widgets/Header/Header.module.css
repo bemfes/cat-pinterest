@@ -22,7 +22,7 @@
     transition: all .1s;
 }
 
-.active.link {
+.active {
     background-color: var(--dark-blue);
     color: var(--white);
 }
