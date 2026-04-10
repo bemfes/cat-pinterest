@@ -1,3 +1,18 @@
+:root {
+  
+  --blue: #2196F3;
+  --dark-blue: #1E88E5;
+
+  --white: #FFFFFF;
+  --light-white: #FFFFFFB3;
+
+  --red: #F24E1E;
+  --bright-red: #FF3A00;
+
+  --accent-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.24);
+  
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
