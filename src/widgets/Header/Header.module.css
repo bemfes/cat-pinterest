@@ -1,0 +1,28 @@
+.header {
+    background-color: var(--blue);
+    box-shadow: var(--accent-shadow);
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.link {
+    padding: 23px;
+    text-align: center;
+    color: var(--light-white);
+    transition: all .1s;
+}
+
+.link:hover {
+    color: var(--white);
+    transition: all .1s;
+}
+
+.active.link {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
