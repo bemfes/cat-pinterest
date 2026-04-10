@@ -6,8 +6,8 @@ const Header: FC = () => {
   return (
     <header className={`${styles.header} container`}>
       <nav className={styles.nav}>
-        <AppLink className={styles.link} to={"/"}>Все котики</AppLink>
-        <AppLink className={styles.link} to={"/favourites"}>Любимые котики</AppLink>
+        <AppLink className={({isActive}) => isActive ? `${styles.active} ${styles.link}` : `${styles.link}`} to={"/"}>Все котики</AppLink>
+        <AppLink className={({isActive}) => isActive ? `${styles.active} ${styles.link}` : `${styles.link}`} to={"/favourites"}>Любимые котики</AppLink>
       </nav>
     </header>
   );
