@@ -42,6 +42,15 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main {
+  padding: 52px 0px;
+}
+
 
 
 
