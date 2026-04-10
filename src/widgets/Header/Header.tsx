@@ -4,7 +4,7 @@ import styles from './Header.module.css'
 
 const Header: FC = () => {
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} container`}>
       <nav className={styles.nav}>
         <AppLink className={styles.link} to={"/"}>Все котики</AppLink>
         <AppLink className={styles.link} to={"/favourites"}>Любимые котики</AppLink>
