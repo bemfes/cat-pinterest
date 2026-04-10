@@ -4,8 +4,8 @@ import styles from './Header.module.css'
 
 const Header: FC = () => {
   return (
-    <header className={`${styles.header} container`}>
-      <nav className={styles.nav}>
+    <header className={styles.header}>
+      <nav className={`${styles.nav} container`}>
         <AppLink className={({isActive}) => isActive ? `${styles.active} ${styles.link}` : `${styles.link}`} to={"/"}>Все котики</AppLink>
         <AppLink className={({isActive}) => isActive ? `${styles.active} ${styles.link}` : `${styles.link}`} to={"/favourites"}>Любимые котики</AppLink>
       </nav>
