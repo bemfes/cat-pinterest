@@ -1,0 +1,1 @@
+export { CAT_API_URL } from './api'
