@@ -6,10 +6,11 @@ import { LikeButtonProps } from "./types"
 import { useFavouriteCatsContext } from "../../model"
 
 const LikeButton: FC<LikeButtonProps> = ({id, url}) => {
-  const { handleFavouriteCat } = useFavouriteCatsContext()
+  const { handleFavouriteCat, isItFavouriteCat } = useFavouriteCatsContext()
+  const isButtonLiked = isItFavouriteCat(id)
   return (
     <Button className={styles.button} onClick={() => handleFavouriteCat({url: url, id: id})}>
-      <HeartIcon className={styles.heart} />
+      <HeartIcon className={`${styles.heart} ${isButtonLiked ? styles.liked : ''}`} />
     </Button>
   )
 }
