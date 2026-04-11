@@ -17,7 +17,7 @@ const CatFeed = () => {
         <Grid className={styles.grid}>
            {data.map((item: CatItemType) => (
                 <CatItem key={item.id} url={item.url} id={item.id}>
-                    <LikeButton/>
+                    <LikeButton id={item.id} url={item.url}/>
                 </CatItem>
            ))}
         </Grid>
