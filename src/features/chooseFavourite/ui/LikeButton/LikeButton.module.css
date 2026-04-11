@@ -13,6 +13,9 @@
 .heart:hover path:nth-child(2) {
     fill: var(--red);
 } 
+.liked:hover path:nth-child(2) {
+    fill: var(--bright-red);
+} 
 
 .liked path:nth-child(1),
 .liked path:nth-child(2) {
