@@ -33,6 +33,10 @@ const FavouriteCatsContextProvider: FC<FavouriteCatsContextProviderProps> = ({ch
         })
     }
 
+    const isItFavouriteCat = (id: string) => {
+        return favouriteCats.find(cat => cat.id === id)
+    }
+
     return (
         <FavouriteCatsContext.Provider value={{favouriteCats}}>
             {children}
