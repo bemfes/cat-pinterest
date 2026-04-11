@@ -8,8 +8,8 @@ const CatFeed = () => {
     
    const { data, loading, error } = useGetCats()
 
-   if (loading && data.length === 0) return <p>... загружаем котиков ...</p>
-   if (error) return <p>{ error }</p>
+   if (loading && data.length === 0) return <p className={styles.text}>... загружаем котиков ...</p>
+   if (error) return <p className={styles.text}>{ error }</p>
     
     return (
         <>
