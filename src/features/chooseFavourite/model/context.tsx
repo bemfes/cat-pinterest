@@ -40,7 +40,7 @@ const FavouriteCatsContextProvider: FC<FavouriteCatsContextProviderProps> = ({ch
     }
 
     return (
-        <FavouriteCatsContext.Provider value={{favouriteCats}}>
+        <FavouriteCatsContext.Provider value={{favouriteCats, handleFavouriteCat, isItFavouriteCat}}>
             {children}
         </FavouriteCatsContext.Provider>
     )
