@@ -51,6 +51,12 @@ a {
   padding: 52px 0px;
 }
 
+@media(max-width: 800px) {
+  .container {
+    width: 92%;
+  }
+}
+
 
 
 
