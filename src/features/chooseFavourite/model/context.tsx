@@ -8,7 +8,13 @@ export const FavouriteCatsContext = createContext()
 
 const FavouriteCatsContextProvider: FC<FavouriteCatsContextProviderProps> = ({children}) => {
 
-    const [favouriteCats, setFavouriteCats] = useState<CatItemType[]>()
+    const [favouriteCats, setFavouriteCats] = useState<CatItemType[]>(() => {
+        const oldData = localStorage.getItem(FAVOURITE_CATS_KEY)
+        if (!oldData || oldData === 'undefined') {
+            return []
+        }
+        return JSON.parse(oldData)
+    })
 
     useEffect(() => {
         localStorage.setItem(FAVOURITE_CATS_KEY, JSON.stringify(favouriteCats))
