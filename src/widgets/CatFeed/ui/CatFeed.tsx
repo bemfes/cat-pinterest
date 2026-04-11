@@ -3,6 +3,7 @@ import useGetCats from "../model/useGetCats"
 import CatItem from "@/entities/cat/ui/CatItem"
 import type { CatItemType } from "@/entities/cat/model"
 import styles from './CatFeed.module.css'
+import LikeButton from "@/features/chooseFavourite/ui/LikeButton"
 
 const CatFeed = () => {
     
@@ -15,7 +16,9 @@ const CatFeed = () => {
         <>
         <Grid className={styles.grid}>
            {data.map((item: CatItemType) => (
-                <CatItem key={item.id} url={item.url} id={item.id} />
+                <CatItem key={item.id} url={item.url} id={item.id}>
+                    <LikeButton/>
+                </CatItem>
            ))}
         </Grid>
         </>
