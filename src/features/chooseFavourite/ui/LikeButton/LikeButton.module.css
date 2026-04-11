@@ -1,0 +1,16 @@
+.button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+.heart path:nth-child(1) {
+    fill: var(--red);
+} 
+.heart path:nth-child(2) {
+    fill: transparent;
+} 
+.heart:hover path:nth-child(2) {
+    fill: var(--red);
+} 
+
