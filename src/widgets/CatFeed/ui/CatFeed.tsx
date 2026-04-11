@@ -6,7 +6,10 @@ import styles from './CatFeed.module.css'
 
 const CatFeed = () => {
     
-   const { data } = useGetCats()
+   const { data, loading, error } = useGetCats()
+
+   if (loading && data.length === 0) return <p>... загружаем котиков ...</p>
+   if (error) return <p>{ error }</p>
     
     return (
         <>
