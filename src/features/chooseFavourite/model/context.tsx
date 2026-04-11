@@ -1,6 +1,6 @@
 import { CatItemType } from "@/entities/cat/model";
 import { FAVOURITE_CATS_KEY } from "@/shared/constants";
-import { createContext } from "node:vm";
+import { createContext } from "react";
 import { FC, useEffect, useState } from "react";
 import { FavouriteCatsContextProviderProps } from "./types";
 
