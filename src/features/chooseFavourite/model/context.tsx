@@ -4,7 +4,7 @@ import { createContext } from "react";
 import { FC, useEffect, useState } from "react";
 import { FavouriteCatsContextProps, FavouriteCatsContextProviderProps } from "./types";
 
-export const FavouriteCatsContext = createContext<FavouriteCatsContextProps | null>({
+export const FavouriteCatsContext = createContext<FavouriteCatsContextProps>({
     favouriteCats: [],
     handleFavouriteCat: () => {},
     isItFavouriteCat: () => undefined
