@@ -5,5 +5,7 @@ export interface FavouriteCatsContextProviderProps {
 }
 
 export interface FavouriteCatsContextProps {
-    favouriteCats: CatItemType[]
+    favouriteCats: CatItemType[];
+    handleFavouriteCat: (item: CatItemType) => void;
+    isItFavouriteCat: (id: string) => CatItemType | undefined
 }
