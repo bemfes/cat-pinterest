@@ -22,6 +22,17 @@ const FavouriteCatsContextProvider: FC<FavouriteCatsContextProviderProps> = ({ch
         localStorage.setItem(FAVOURITE_CATS_KEY, JSON.stringify(favouriteCats))
     }, [favouriteCats])
 
+    const handleFavouriteCat = (item: CatItemType) => {
+        setFavouriteCats(previousData => {
+            const isAdded = previousData.find(cat => cat.id === item.id)
+            if (isAdded) {
+                const newData = previousData.filter(cat => cat.id !== item.id)
+                return newData
+            }
+            return [ ...previousData, item ]
+        })
+    }
+
     return (
         <FavouriteCatsContext.Provider value={{favouriteCats}}>
             {children}
