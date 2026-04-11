@@ -1,10 +1,9 @@
+import FavouriteCatsFeed from "@/widgets/FavouriteCatsFeed/ui"
 import { FC } from "react"
 
 const FavouriteCatsPage: FC = () => {
     return (
-        <div>
-            favourite cats
-        </div>
+        <FavouriteCatsFeed/>
     )
 }
 
