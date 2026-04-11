@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react"
-import { CatItem } from "@/entities/cat/model"
+import { CatItemType } from "@/entities/cat/model"
 import { getCats } from "@/entities/cat/api"
 
 const useGetCats = () => {
 
-    const [data, setData] = useState<CatItem[]>([])
+    const [data, setData] = useState<CatItemType[]>([])
     const [loading, setLoading] = useState<boolean>(false)
     const [error, setError] = useState<null | string>(null)
     const [page, setPage] = useState<number>(0)

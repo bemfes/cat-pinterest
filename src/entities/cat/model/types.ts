@@ -1,4 +1,4 @@
-export interface CatItem {
+export interface CatItemType {
     url: string;
     id: string;
 }

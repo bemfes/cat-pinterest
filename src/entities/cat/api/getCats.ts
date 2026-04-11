@@ -1,8 +1,8 @@
 import { CAT_API_URL } from "@/shared/constants"
 import { CatApiResponse } from "./types"
-import { CatItem } from "../model"
+import { CatItemType } from "../model"
 
-export const getCats = async (page: number, limit: number): Promise<{ catData: CatItem[], totalCountImages: number}> => {
+export const getCats = async (page: number, limit: number): Promise<{ catData: CatItemType[], totalCountImages: number}> => {
     const res: Response = await fetch(
         `${CAT_API_URL}?page=${page}&limit=${limit}`,
          {
@@ -15,7 +15,7 @@ export const getCats = async (page: number, limit: number): Promise<{ catData: C
         throw new Error('Failed to fetch')
     }
     const responseData: CatApiResponse[] = await res.json()
-    const catData: CatItem[] = responseData.map(cat => ({url: cat.url, id: cat.id}))
+    const catData: CatItemType[] = responseData.map(cat => ({url: cat.url, id: cat.id}))
     const totalCountImages = Number(res.headers.get('pagination-count'))
 
     return { catData, totalCountImages }

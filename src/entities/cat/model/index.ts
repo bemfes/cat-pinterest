@@ -1,1 +1,1 @@
-export type { CatItem } from './types'
+export type { CatItemType } from './types'
