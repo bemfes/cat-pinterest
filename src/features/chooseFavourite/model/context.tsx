@@ -5,7 +5,9 @@ import { FC, useEffect, useState } from "react";
 import { FavouriteCatsContextProps, FavouriteCatsContextProviderProps } from "./types";
 
 export const FavouriteCatsContext = createContext<FavouriteCatsContextProps | null>({
-    favouriteCats: []
+    favouriteCats: [],
+    handleFavouriteCat: () => {},
+    isItFavouriteCat: () => undefined
 })
 
 const FavouriteCatsContextProvider: FC<FavouriteCatsContextProviderProps> = ({children}) => {
