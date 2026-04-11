@@ -4,13 +4,14 @@ import { useFavouriteCatsContext } from "@/features/chooseFavourite/model"
 import LikeButton from "@/features/chooseFavourite/ui/LikeButton"
 import Grid from "@/shared/ui/Grid"
 import { FC } from "react"
+import styles from './FavouriteCatsFeed.module.css'
 
 const FavouriteCatsFeed: FC = () => {
 
     const {favouriteCats} = useFavouriteCatsContext()
    
     return (
-        <Grid className="">
+        <Grid className={styles.grid}>
             {favouriteCats.map((item: CatItemType) => (
                 <CatItem key={item.id} url={item.url} id={item.id}>
                     <LikeButton id={item.id} url={item.url}/>
