@@ -1,0 +1,1 @@
+export const FAVOURITE_CATS_KEY = 'favouriteCats'
