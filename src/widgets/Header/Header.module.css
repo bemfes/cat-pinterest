@@ -1,6 +1,9 @@
 .header {
     background-color: var(--blue);
     box-shadow: var(--accent-shadow);
+    position: fixed;
+    width: 100%;
+    z-index: 4;
 }
 
 .nav {
