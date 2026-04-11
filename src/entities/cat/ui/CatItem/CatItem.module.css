@@ -1,0 +1,28 @@
+.img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.item {
+    position: relative;
+    transition: all .2s;
+}
+
+.item:hover  {
+    transform: scale(1.1);
+    box-shadow: var(--accent-shadow);
+    transition: all .2s;
+}
+
+.wrapper {
+    display: none;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.item:hover .wrapper {
+    display: block;
+}
