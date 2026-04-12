@@ -12,6 +12,8 @@
 
 Проект сделан с помощью React, React Router, React Context, TypeScript, CSS-modules и Vite. 
 
+Демо можно (посмотреть здесь)[https://bemfes.github.io/cat-pinterest/] 
+
 ## Проект "Кошачий пинтерест"
 
 Необходимо реализовать интерфейс для просмотра котиков используя API https://thecatapi.com
