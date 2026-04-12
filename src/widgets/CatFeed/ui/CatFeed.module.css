@@ -4,8 +4,12 @@
     gap: 48px;
 }
 
-.text {
+.text, .loadingScroll {
     text-align: center;
+}
+
+.loadingScroll {
+    padding-top: 48px;
 }
 
 @media(max-width: 767px) {
