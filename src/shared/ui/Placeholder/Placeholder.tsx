@@ -1,6 +1,6 @@
-import { FC } from "react"
+import type { FC } from "react"
 import AppLink from "../AppLink/AppLink"
-import { PlaceholderProps } from "./types"
+import type { PlaceholderProps } from "./types"
 import styles from './Placeholder.module.css'
 
 const Placeholder: FC<PlaceholderProps> = ({to, text, linkText, className}) => {

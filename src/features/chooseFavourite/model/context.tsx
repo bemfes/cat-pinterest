@@ -1,8 +1,9 @@
-import { CatItemType } from "@/entities/cat/model";
+import type { CatItemType } from "@/entities/cat/model";
 import { FAVOURITE_CATS_KEY } from "@/shared/constants";
 import { createContext } from "react";
-import { FC, useEffect, useState } from "react";
-import { FavouriteCatsContextProps, FavouriteCatsContextProviderProps } from "./types";
+import type { FC } from "react";
+import { useEffect, useState } from "react";
+import type { FavouriteCatsContextProps, FavouriteCatsContextProviderProps } from "./types";
 
 export const FavouriteCatsContext = createContext<FavouriteCatsContextProps>({
     favouriteCats: [],

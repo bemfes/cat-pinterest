@@ -1,5 +1,6 @@
-import { FC, useState } from "react"
-import { CatItemProps } from "./types"
+import type { FC } from "react"
+import { useState } from "react"
+import type { CatItemProps } from "./types"
 import styles from './CatItem.module.css'
 
 

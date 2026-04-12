@@ -3,7 +3,7 @@ import CatItem from "@/entities/cat/ui/CatItem"
 import { useFavouriteCatsContext } from "@/features/chooseFavourite/model"
 import LikeButton from "@/features/chooseFavourite/ui/LikeButton"
 import Grid from "@/shared/ui/Grid"
-import { FC } from "react"
+import type { FC } from "react"
 import styles from './FavouriteCatsFeed.module.css'
 import Placeholder from "@/shared/ui/Placeholder"
 

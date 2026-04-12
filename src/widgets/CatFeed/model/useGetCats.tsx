@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { CatItemType } from "@/entities/cat/model"
+import type { CatItemType } from "@/entities/cat/model"
 import { getCats } from "@/entities/cat/api"
 
 const useGetCats = () => {

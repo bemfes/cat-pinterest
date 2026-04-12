@@ -1,6 +1,6 @@
 import { CAT_API_URL } from "@/shared/constants"
-import { CatApiResponse } from "./types"
-import { CatItemType } from "../model"
+import type { CatApiResponse } from "./types"
+import type { CatItemType } from "../model"
 
 export const getCats = async (page: number, limit: number): Promise<{ catData: CatItemType[], totalCountImages: number}> => {
     const res: Response = await fetch(

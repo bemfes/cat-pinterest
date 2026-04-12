@@ -1,5 +1,5 @@
-import { FC } from "react"
-import { GridProps } from "./types"
+import type { FC } from "react"
+import type { GridProps } from "./types"
 
 const Grid: FC<GridProps> = ({children, className}) => {
     return (

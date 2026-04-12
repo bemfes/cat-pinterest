@@ -1,8 +1,8 @@
 import Button from "@/shared/ui/Button"
-import { FC } from "react"
+import type { FC } from "react"
 import HeartIcon from "@/shared/assets/icons/heart-icon.svg?react"
 import styles from './LikeButton.module.css'
-import { LikeButtonProps } from "./types"
+import type { LikeButtonProps } from "./types"
 import { useFavouriteCatsContext } from "../../model"
 
 const LikeButton: FC<LikeButtonProps> = ({id, url}) => {

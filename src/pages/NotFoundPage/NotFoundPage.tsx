@@ -1,5 +1,5 @@
 import Placeholder from "@/shared/ui/Placeholder"
-import { FC } from "react"
+import type { FC } from "react"
 
 const NotFoundPage: FC = () => {
     return (
