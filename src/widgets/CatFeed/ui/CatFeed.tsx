@@ -2,10 +2,10 @@ import useGetCats from "../model/useGetCats"
 import type { CatItemType } from "@/entities/cat/model"
 import styles from './CatFeed.module.css'
 import { useInfiniteScroll } from "@/shared/hooks"
-import { useRef } from "react"
+import { useRef, type FC } from "react"
 import CatList from "@/widgets/CatList/ui"
 
-const CatFeed = () => {
+const CatFeed: FC = () => {
     
    const { data, loading, error, totalImages, setPage } = useGetCats()
 
