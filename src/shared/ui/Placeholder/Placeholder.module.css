@@ -1,0 +1,56 @@
+.dummy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.link {
+    font-size: 17px;
+    padding: 20px;
+    background-color: var(--blue);
+    color: var(--white);
+    transition: all .1s;
+}
+
+.link:hover {
+    background-color: var(--dark-blue);
+    transition: all .1s;
+}
+
+
+@media(min-width: 800px) {
+    .br {
+        display: none;
+    }
+}
+
+
+@media(max-width: 800px) {
+    .text {
+        text-align: center;
+        line-height: 1.7em;
+        margin-bottom: 20px;
+}
+}
+
+@media(max-width: 767px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+}
+
+@media(max-width: 390px) {
+    .text {
+        font-size: 17px;
+        text-align: center;
+        line-height: 1.7em;
+        margin-bottom: 20px;
+}
+}
+
