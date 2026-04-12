@@ -17,6 +17,11 @@
     }
 }
 
+@media(max-width: 800px) {
+    .box p {
+        max-width: 350px;
+}
+}
 
 
 @media(max-width: 767px) {
