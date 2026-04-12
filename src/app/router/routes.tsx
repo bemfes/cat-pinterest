@@ -1,10 +1,10 @@
-import { createBrowserRouter } from "react-router-dom"
+import { createHashRouter } from "react-router-dom"
 import MainLayout from "../layout"
 import HomePage from "@/pages/HomePage"
 import FavouriteCatsPage from "@/pages/FavouriteCatsPage"
 import NotFoundPage from "@/pages/NotFoundPage"
 
-const router = createBrowserRouter([{
+const router = createHashRouter([{
     path: '/',
     element: <MainLayout/>,
     children: [
@@ -22,8 +22,6 @@ const router = createBrowserRouter([{
         },
     ]
     
-}], {
-  basename: "/cat-pinterest/",
-})
+}])
 
 export default router
