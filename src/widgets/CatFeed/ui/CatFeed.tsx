@@ -28,7 +28,7 @@ const CatFeed = () => {
            ))}
         </Grid>
         <div ref={observedEl}></div>
-        { loading && data.length > 0 && <p>... загружаем еще котиков ...</p> }
+        { loading && data.length > 0 && <p className={styles.loadingScroll}>... загружаем еще котиков ...</p> }
         </>
     )
 }
