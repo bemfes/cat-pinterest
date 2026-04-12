@@ -22,6 +22,8 @@ const router = createBrowserRouter([{
         },
     ]
     
-}])
+}], {
+  basename: "/cat-pinterest/",
+})
 
 export default router
