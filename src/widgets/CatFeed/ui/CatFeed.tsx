@@ -1,11 +1,9 @@
-import Grid from "@/shared/ui/Grid"
 import useGetCats from "../model/useGetCats"
-import CatItem from "@/entities/cat/ui/CatItem"
 import type { CatItemType } from "@/entities/cat/model"
 import styles from './CatFeed.module.css'
-import LikeButton from "@/features/chooseFavourite/ui/LikeButton"
 import { useInfiniteScroll } from "@/shared/hooks"
 import { useRef } from "react"
+import CatList from "@/widgets/CatList/ui"
 
 const CatFeed = () => {
     
@@ -20,13 +18,7 @@ const CatFeed = () => {
     
     return (
         <>
-        <Grid className={styles.grid}>
-           {data.map((item: CatItemType) => (
-                <CatItem key={item.id} url={item.url} id={item.id}>
-                    <LikeButton id={item.id} url={item.url}/>
-                </CatItem>
-           ))}
-        </Grid>
+        <CatList data={data}/>
         <div ref={observedEl}></div>
         { loading && data.length > 0 && <p className={styles.loadingScroll}>... загружаем еще котиков ...</p> }
         </>
