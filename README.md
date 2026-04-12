@@ -10,7 +10,7 @@
 
 Также есть страница 404, которая будет показываться, когда пользователь введет несуществующий адрес страницы.
 
-Проект сделан с помощью React, React Router, React Context, TypeScript, CSS-modules и Vite. 
+Проект сделан с помощью React, React Router, React Context, TypeScript, CSS-modules и Vite. Архитектура - FSD. 
 
 Демо можно (посмотреть здесь)[https://bemfes.github.io/cat-pinterest/] 
 
