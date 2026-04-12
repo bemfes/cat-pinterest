@@ -1,11 +1,8 @@
-import type { CatItemType } from "@/entities/cat/model"
-import CatItem from "@/entities/cat/ui/CatItem"
 import { useFavouriteCatsContext } from "@/features/chooseFavourite/model"
-import LikeButton from "@/features/chooseFavourite/ui/LikeButton"
-import Grid from "@/shared/ui/Grid"
 import type { FC } from "react"
 import styles from './FavouriteCatsFeed.module.css'
 import Placeholder from "@/shared/ui/Placeholder"
+import CatList from "@/widgets/CatList/ui"
 
 const FavouriteCatsFeed: FC = () => {
 
@@ -16,13 +13,7 @@ const FavouriteCatsFeed: FC = () => {
     }
    
     return (
-        <Grid className={styles.grid}>
-            {favouriteCats.map((item: CatItemType) => (
-                <CatItem key={item.id} url={item.url} id={item.id}>
-                    <LikeButton id={item.id} url={item.url}/>
-                </CatItem>
-           ))}
-        </Grid>
+        <CatList data={favouriteCats}/>
         
     )
 }
