@@ -4,10 +4,16 @@ import CatItem from "@/entities/cat/ui/CatItem"
 import type { CatItemType } from "@/entities/cat/model"
 import styles from './CatFeed.module.css'
 import LikeButton from "@/features/chooseFavourite/ui/LikeButton"
+import { useInfiniteScroll } from "@/shared/hooks"
+import { useRef } from "react"
 
 const CatFeed = () => {
     
-   const { data, loading, error } = useGetCats()
+   const { data, loading, error, totalImages, setPage } = useGetCats()
+
+   const observedEl = useRef<null | HTMLDivElement>(null)
+
+   useInfiniteScroll<CatItemType>({ loading, data, count: totalImages, callback: () => setPage((prev) => prev + 1), observedEl, thresholdNumber: 1 })
 
    if (loading && data.length === 0) return <p className={styles.text}>... загружаем котиков ...</p>
    if (error) return <p className={styles.text}>{ error }</p>
@@ -21,6 +27,8 @@ const CatFeed = () => {
                 </CatItem>
            ))}
         </Grid>
+        <div ref={observedEl}></div>
+        { loading && data.length > 0 && <p>... загружаем еще котиков ...</p> }
         </>
     )
 }
