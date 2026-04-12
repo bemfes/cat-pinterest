@@ -1,5 +1,5 @@
 import AppLink from "@/shared/ui/AppLink/AppLink";
-import { FC } from "react";
+import type { FC } from "react";
 import styles from './Header.module.css'
 
 const Header: FC = () => {

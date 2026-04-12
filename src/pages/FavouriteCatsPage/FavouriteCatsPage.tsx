@@ -1,5 +1,5 @@
 import FavouriteCatsFeed from "@/widgets/FavouriteCatsFeed/ui"
-import { FC } from "react"
+import type { FC } from "react"
 
 const FavouriteCatsPage: FC = () => {
     return (
