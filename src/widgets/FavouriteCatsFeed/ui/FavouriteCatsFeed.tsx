@@ -5,17 +5,14 @@ import LikeButton from "@/features/chooseFavourite/ui/LikeButton"
 import Grid from "@/shared/ui/Grid"
 import { FC } from "react"
 import styles from './FavouriteCatsFeed.module.css'
-import AppLink from "@/shared/ui/AppLink/AppLink"
+import Placeholder from "@/shared/ui/Placeholder"
 
 const FavouriteCatsFeed: FC = () => {
 
     const {favouriteCats} = useFavouriteCatsContext()
 
     if (favouriteCats.length === 0) {
-        return <div className={styles.dummy}>
-        <p className={styles.text}>У вас пока нет любимых котиков 😿 <br className={styles.br}/> Скорее выберите кого-то! 😸</p>
-        <AppLink className={styles.link} to={'/'}>Выбрать любимых котиков 😻</AppLink>
-        </div>
+        return <Placeholder className={styles.box} linkText="Выбрать любимых котиков 😻" text="У вас пока нет любимых котиков 😿 Скорее выберите кого-то! 😸" to={'/'}/>
     }
    
     return (
