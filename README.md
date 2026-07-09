@@ -1,20 +1,77 @@
-# О проекте 
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?logo=reactrouter&logoColor=white)
+![React Context](https://img.shields.io/badge/React_Context-61DAFB?logo=react&logoColor=white)
+![CSS Modules](https://img.shields.io/badge/CSS_Modules-000000?logo=cssmodules&logoColor=white)
+![FSD](https://img.shields.io/badge/Architecture-FSD-8A2BE2)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
 
-Проект выполнен по всем требованиям, описанным ниже. 
+# 🐱 Кошачий Пинтерест
 
-Приложение адаптировано под разные устройства. По умолчанию открывается вкладка со всеми котиками, на этой странице отображаются котики, подгруженные из API. Также на этой странице реализована бесконечная прокрутка.
+Веб-приложение для просмотра изображений котиков с использованием **The Cat API**. Пользователь может просматривать бесконечную ленту изображений, добавлять понравившихся котиков в избранное и управлять списком любимых изображений. Избранные котики сохраняются в **localStorage**, поэтому остаются доступными после перезагрузки страницы.
 
-Реализован функционал добавления котика в любимые и удаления его оттуда с любой страницы приложения. Данные о любимых котиках сохраняются в local Storage.
+❗️❗️ Некоторый функционал приложения может быть недоступен в России.
 
-На вкладке с любимыми котиками отображаются котики, которых лайкнул пользователь.
+🌐 [Демо проекта](https://bemfes.github.io/cat-pinterest/)
 
-Также есть страница 404, которая будет показываться, когда пользователь введет несуществующий адрес страницы.
+## 🛠️ Стек
 
-Проект сделан с помощью React, React Router, React Context, TypeScript, CSS-modules и Vite. Архитектура - FSD. 
+* React
+* TypeScript
+* React Router
+* React Context
+* CSS Modules
+* FSD
+* Vite
 
-Демо можно посмотреть [здесь](https://bemfes.github.io/cat-pinterest/)
+## 🎯 Функционал
 
-## Проект "Кошачий пинтерест"
+* Просмотр изображений котиков
+* Бесконечная прокрутка списка
+* Добавление изображений в избранное
+* Удаление изображений из избранного
+* Сохранение избранного в localStorage
+* Отдельная страница с избранными изображениями
+* Страница 404 для несуществующих маршрутов
+
+## 📡 API
+
+Приложение использует [The Cat API](https://thecatapi.com) для получения изображений котиков.
+
+## 🚀 Установка и запуск
+
+1. Клонируйте репозиторий
+
+```
+git clone https://github.com/bemfes/cat-pinterest.git
+```
+
+2. Установите зависимости
+
+```
+npm install
+```
+
+3. Создайте .env файл в корне проекта и добавьте свой API-ключ 
+
+```
+VITE_API_KEY = YOUR_API_KEY
+```
+
+4. Запустите проект в режиме разработки
+
+```
+npm run dev
+```
+
+## 📬 Контакты
+
+Анастасия Устин
+
+* Telegram: @annastin28
+* Email: anastasiia_ustin@mail.ru
+
+## Исходное задание - Проект "Кошачий пинтерест"
 
 Необходимо реализовать интерфейс для просмотра котиков используя API https://thecatapi.com
 
