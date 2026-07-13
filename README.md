@@ -14,6 +14,12 @@
 
 🌐 [Демо проекта](https://bemfes.github.io/cat-pinterest/)
 
+## 📸 Превью
+
+<div>
+    <img src="./preview/cat-pinterest-preview.gif" width="950" alt="Видео-демонстрация приложения">
+</div>
+
 ## 🛠️ Стек
 
 * React
